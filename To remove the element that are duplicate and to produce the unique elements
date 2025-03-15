@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        int[] n={1,1,3,3,2,3,8,5};
+        Arrays.sort(n);
+        int i=0;
+        for(int j=1;j<n.length;j++){
+            if(n[j]!=n[i]){
+                i++;
+                n[i]=n[j];
+            }
+        }
+        for(int k=0;k<=i;k++){
+            System.out.print(n[k]+" ");
+        }
+    }
+}
+
+
+output:
+
+1 2 3 5 8
