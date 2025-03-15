@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	int n[]={1,8,1,6,8,5,2,9,3,5};
+	
+	HashMap<Integer,Integer> a=new HashMap<>();
+	
+	for(int m:n){
+	    a.put(m,a.getOrDefault(m,0)+1);
+	}
+	for(int k:n){
+	    if(a.get(k)==1){
+	        System.out.print(k+" ");
+	    }
+	}
+	}
+}
