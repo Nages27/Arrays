@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	int n[]={1,8,1,6,8,5,2,9,3,5,1};
+	
+	HashMap<Integer,Integer> a=new HashMap<>();
+	HashSet<Integer> b=new HashSet<>();
+	for(int m:n){
+	    a.put(m,a.getOrDefault(m,0)+1);
+	}
+	for(int k:n){
+	    if(a.get(k)==2){
+	        b.add(k);
+	    }
+	}
+	ArrayList<Integer> c=new ArrayList<>();
+	for(int Y:b){
+	    System.out.print(Y+" ");
+	}
+	}
+}
+
+output:
+
+5 8
